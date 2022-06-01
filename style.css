@@ -2,8 +2,174 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Write CSS code below */
+
+.main-content{
+    width: 90%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+
+
+.left-section{
+    background-color: black;
+}
+.left-content{
+    color: white;
+    padding: 1rem;
+}
+
+
+
+
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+    overflow: hidden;
+}
+.profile-image img{
+    width: 100%;
+}
+
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+
+.designation{
+    color: aqua;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+
+
+
+.contact-info{
+    list-style-type: none;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+}
+.social-media i{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    cursor: pointer;
+}
+i{
+    color: rgba(115, 171, 235, 0.937);
+}
+.personal-details {
+    list-style: none;
+    -webkit-padding-start: 0px;
+}
+.personal-details .icon i{
+    font-size: 1.0em;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    
+    padding-top: 0.5rem;
+}
+
+
+
+
+
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.skill-item{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+}
+
+
+
+
+
+
+
+
+.right-section{
+    background-color: lightblue;
+}
+.right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.right-content-title{
+    text-transform: uppercase;
+    color: rgba(165, 42, 42, 0.529);
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+.right-content{
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+.right-content ul{
+    list-style-position: inside;
+}
+
+@media screen and (max-width: "674px") {
+    body{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
